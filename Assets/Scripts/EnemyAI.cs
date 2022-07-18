@@ -87,7 +87,7 @@ public class EnemyAI : MonoBehaviour, IAI
 
     private void Update()
     {
-        if (GroundGenerator.started == true)
+        if (GroundGenerator.started == true && !Player.moving)
         {
             Vector3 pos = GetPlayerPos();
             if (pos != null && moving == false)
